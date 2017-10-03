@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // When the user presses the .signin button, fade in the modal window
   signIn.addEventListener('click', function(){
-    modal.style.display = 'inline';
+    $(".modal").fadeIn(800);
   })
 
   // When the user presses the .close button, fade out the modal window
   closeButton.addEventListener('click', function(){
-    modal.style.display = 'none';
+    $(".modal").fadeOut(800);
   });
 
 
   formGetStarted.addEventListener('click', function(){
-    modal.style.display = 'none';
+    $(".modal").fadeOut(800);
   })
 
   // When the user presses the .submit button, add an .error class to both input elements
